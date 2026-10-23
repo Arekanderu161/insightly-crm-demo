@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Insightly CRM</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Ccircle cx=%2216%22 cy=%2216%22 r=%2214%22 fill=%22%238dff7c%22/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- The shot uses Lufga (commercial). Outfit is the closest free match by metrics; a locally installed Lufga wins. -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M5 10.4 12 5l7 5.4v8.1a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 5 18.5zM9.6 16.3h4.8"/></symbol>
+  <symbol id="i-left" viewBox="0 0 24 24"><path d="M18.5 12h-13M10.5 7l-5 5 5 5"/></symbol>
+  <symbol id="i-right" viewBox="0 0 24 24"><path d="M5 12h14M14 7l5 5-5 5"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.8"/><path d="m16.2 16.2 3.8 3.8"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 4.2 2.3 4.8 5.2.7-3.8 3.6.9 5.2L12 16l-4.6 2.5.9-5.2-3.8-3.6 5.2-.7z"/></symbol>
+  <symbol id="i-pen" viewBox="0 0 24 24"><path d="M5 19l.8-3.6 9.6-9.6a2 2 0 0 1 2.8 2.8l-9.6 9.6zM13.6 7.6l2.8 2.8M13 19.5h6"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5.5" y="10.5" width="13" height="9.5" rx="2.6"/><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5M12 14.4v1.8"/></symbol>
+  <symbol id="i-unlock" viewBox="0 0 24 24"><rect x="5.5" y="10.5" width="13" height="9.5" rx="2.6"/><path d="M8.5 10.5V8a3.5 3.5 0 0 1 6.8-1.2M12 14.4v1.8"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-more" viewBox="0 0 24 24"><circle cx="12" cy="5.5" r=".6"/><circle cx="12" cy="12" r=".6"/><circle cx="12" cy="18.5" r=".6"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m6.5 12.5 3.6 3.5 7.4-7.6"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"/></symbol>
+  <symbol id="i-bookmark" viewBox="0 0 24 24"><path d="M7.5 4.5h9a1.5 1.5 0 0 1 1.5 1.5v14l-6-3.6L6 20V6a1.5 1.5 0 0 1 1.5-1.5zM9.8 8.6h4.4"/></symbol>
+  <symbol id="i-sort" viewBox="0 0 24 24"><path d="M8.5 19V5M5.2 8.3 8.5 5l3.3 3.3M15.5 5v14M12.2 15.7l3.3 3.3 3.3-3.3"/></symbol>
+  <symbol id="i-export" viewBox="0 0 24 24"><path d="M14 4H8a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V8zM14 4v4h4M12 10.5v6M9.6 14.2 12 16.6l2.4-2.4"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="4.5" y="6" width="15" height="13.5" rx="3"/><path d="M8.5 4v3.5M15.5 4v3.5M4.5 10.5h15"/><g fill="currentColor" stroke="none"><circle cx="8.6" cy="13.8" r=".9"/><circle cx="12" cy="13.8" r=".9"/><circle cx="15.4" cy="13.8" r=".9"/><circle cx="8.6" cy="16.6" r=".9"/><circle cx="12" cy="16.6" r=".9"/><circle cx="15.4" cy="16.6" r=".9"/></g></symbol>
+  <symbol id="i-gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="2.9"/><path d="M12 3.5l1.7 2.1 2.7-.5.7 2.6 2.5 1-.7 2.6L20.5 13l-2 1.8.4 2.7-2.6.6-1.1 2.5-2.5-1L12 21l-1.7-1.4-2.5 1-1.1-2.5-2.6-.6.4-2.7-2-1.8 1.6-1.7-.7-2.6 2.5-1 .7-2.6 2.7.5z"/></symbol>
+  <symbol id="i-device" viewBox="0 0 24 24"><rect x="7" y="3.5" width="10" height="17" rx="2.6"/><path d="M11 17.2h2"/></symbol>
+  <symbol id="i-assign" viewBox="0 0 24 24"><circle cx="12" cy="5.2" r="1.7"/><path d="M12 8.6v4.6M12 13.2l-4 6.3M12 13.2l4 6.3"/></symbol>
+</svg>
+
+<div class="stage" id="stage" data-view="app">
+  <div class="rig no-anim" id="rig">
+    <div class="ghost g2"></div>
+    <div class="ghost g1"></div>
+
+    <div class="screen" id="app">
+      <div class="ambient" aria-hidden="true">
+        <i class="glow glow-wash"></i>
+        <i class="glow glow-olive"></i>
+        <i class="glow glow-lime"></i>
+        <i class="glow glow-green" id="glowGreen"></i>
+        <i class="grain"></i>
+      </div>
+
+      <img class="logo" src="assets/logo-insightly.png" alt="insightly">
+
+      <nav class="nav" id="nav" aria-label="Sections">
+        <span class="nav-pill" id="navPill"></span>
+        <button class="circle home" data-page="home" aria-label="Home"><svg class="ico"><use href="#i-home"/></svg></button>
+        <button class="nav-item is-active" data-page="contacts">Contacts</button>
+        <button class="nav-item" data-page="tasks">Tasks</button>
+        <button class="nav-item" data-page="organizations">Organizations</button>
+        <button class="nav-item" data-page="leads">Leads</button>
+        <button class="nav-item" data-page="opportunities">Opportunities</button>
+        <button class="nav-item" data-page="projects">Projects</button>
+        <button class="nav-item" data-page="reports">Reports</button>
+      </nav>
+
+      <button class="circle back" id="back" aria-label="Back"><svg class="ico"><use href="#i-left"/></svg></button>
+      <p class="crumb" id="crumb">Contacts</p>
+      <h1 class="title"><span id="title">All Contacts</span><span class="count" id="count">16</span></h1>
+
+      <label class="search">
+        <input id="search" type="search" placeholder="Search" autocomplete="off" spellcheck="false" aria-label="Search contacts">
+        <svg class="ico"><use href="#i-search"/></svg>
+      </label>
+
+      <section class="panel edge list" aria-label="All contacts">
+        <div class="list-scroll" id="listScroll" role="listbox" aria-label="Contacts">
+          <div class="list-hl" id="listHl"></div>
+        </div>
+      </section>
+
+      <section class="panel edge detail" id="detail" aria-label="Contact details">
+        <header class="d-head">
+          <img class="avatar" id="dAvatar" src="assets/avatars/aaron-rodd.jpg" alt="">
+          <div>
+            <p class="d-name" id="dName"></p>
+            <p class="d-role" id="dRole"></p>
+          </div>
+          <div class="d-actions">
+            <button class="circle" id="actFav" aria-label="Favorite" aria-pressed="false"><svg class="ico"><use href="#i-star"/></svg></button>
+            <button class="circle" id="actEdit" aria-label="Edit contact" aria-pressed="false"><svg class="ico"><use href="#i-pen"/></svg></button>
+            <button class="circle" id="actLock" aria-label="Lock contact" aria-pressed="false"><svg class="ico"><use href="#i-unlock"/></svg></button>
+          </div>
+        </header>
+
+        <dl class="info" id="info">
+          <div><dt>Title</dt><dd data-field="title"></dd></div>
+          <div><dt>Organization Name</dt><dd data-field="org"></dd></div>
+          <div><dt>Phone Number</dt><dd data-field="phone"></dd></div>
+          <div><dt>Email Address</dt><dd data-field="email"></dd></div>
+          <div><dt>Contact Owner</dt><dd data-field="owner"></dd></div>
+        </dl>
+        <div class="d-divider"></div>
+
+        <div class="stats" id="stats">
+          <button class="stat" data-key="contacts" data-target="w-contacts"><span class="stat-label">Contacts</span><span class="stat-track hatch"><i></i></span><span class="stat-num">0</span></button>
+          <button class="stat" data-key="opps" data-target="w-opps"><span class="stat-label">Opportunites</span><span class="stat-track hatch"><i></i></span><span class="stat-num">0</span></button>
+          <button class="stat" data-key="projects" data-target="w-projects"><span class="stat-label">Projects</span><span class="stat-track hatch"><i></i></span><span class="stat-num">0</span></button>
+          <button class="stat" data-key="orgs" data-target="w-orgs"><span class="stat-label">Organizations</span><span class="stat-track hatch"><i></i></span><span class="stat-num">0</span></button>
+          <button class="stat" data-key="notes" data-target="w-notes"><span class="stat-label">Notes</span><span class="stat-track hatch"><i></i></span><span class="stat-num">0</span></button>
+          <button class="stat" data-key="files" data-target="w-files"><span class="stat-label">Files</span><span class="stat-track hatch"><i></i></span><span class="stat-num">0</span></button>
+        </div>
+
+        <div class="widgets">
+          <article class="widget" id="w-contacts">
+            <header class="w-head"><h2>Contacts</h2><button class="w-add" data-add="contact" aria-label="Add related contact"><svg class="ico"><use href="#i-plus"/></svg></button></header>
+            <div class="rel-list scroll-y" id="relList"></div>
+          </article>
+
+          <article class="widget" id="w-orgs">
+            <header class="w-head"><h2>Organizations</h2><button class="w-add" data-add="org" aria-label="Link organization"><svg class="ico"><use href="#i-plus"/></svg></button></header>
+            <div class="org-list scroll-x" id="orgList"></div>
+          </article>
+
+          <article class="widget" id="w-notes">
+            <header class="w-head"><h2>Notes</h2><button class="w-add" data-add="note" aria-label="Add note"><svg class="ico"><use href="#i-plus"/></svg></button></header>
+            <div class="tabs" role="tablist">
+              <button class="tab is-active" role="tab" data-tab="projects" aria-selected="true">Projects</button>
+              <button class="tab" role="tab" data-tab="personal" aria-selected="false">Personal</button>
+              <button class="tab" role="tab" data-tab="team" aria-selected="false">Team</button>
+            </div>
+            <div class="tab-panel"><ul class="note-list scroll-y" id="noteList"></ul></div>
+          </article>
+
+          <article class="widget" id="w-opps">
+            <header class="w-head"><h2>Opportunites</h2><button class="w-add" data-add="opp" aria-label="Add opportunity"><svg class="ico"><use href="#i-plus"/></svg></button></header>
+            <div class="opp-list scroll-y" id="oppList"></div>
+          </article>
+
+          <article class="widget" id="w-files">
+            <header class="w-head"><h2>Files</h2><button class="w-add" data-add="file" aria-label="Upload file"><svg class="ico"><use href="#i-plus"/></svg></button></header>
+            <div class="file-list scroll-x" id="fileList"></div>
+            <input type="file" id="fileInput" hidden>
+          </article>
+
+          <article class="widget" id="w-projects">
+            <header class="w-head"><h2>Projects</h2></header>
+            <div id="projBody"></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="away" id="away" aria-live="polite">
+        <div><p id="awayText"></p><button class="pill-btn" id="awayBack">Back to Contacts</button></div>
+      </section>
+
+      <button class="dock-btn" style="left:26px" id="dockPrivacy" aria-label="Lock screen"><svg class="ico"><use href="#i-lock"/></svg></button>
+      <button class="dock-btn" style="left:73px" id="dockView" aria-label="Presentation view"><svg class="ico"><use href="#i-device"/></svg></button>
+
+      <button class="dock-btn" style="left:566px" id="dockFav" aria-label="Show favorites" aria-pressed="false"><svg class="ico"><use href="#i-bookmark"/></svg></button>
+      <button class="dock-btn" style="left:613px" id="dockSearch" aria-label="Search"><svg class="ico"><use href="#i-search"/></svg></button>
+      <button class="dock-btn" style="left:660px" id="dockAdd" aria-label="New contact"><svg class="ico"><use href="#i-plus"/></svg></button>
+      <button class="dock-btn" style="left:707px" id="dockSort" aria-label="Sort contacts"><svg class="ico"><use href="#i-sort"/></svg></button>
+      <button class="dock-btn" style="left:754px" id="dockExport" aria-label="Export contacts"><svg class="ico"><use href="#i-export"/></svg></button>
+
+      <button class="dock-btn" style="left:1199px" id="dockCal" aria-label="Calendar"><svg class="ico"><use href="#i-calendar"/></svg><i class="dot" id="calDot"></i></button>
+      <button class="dock-btn" style="left:1247px" id="dockSettings" aria-label="Settings"><svg class="ico"><use href="#i-gear"/></svg></button>
+      <button class="dock-btn dock-me" style="left:1296px" id="dockMe" aria-label="Profile"><img src="assets/avatars/me.jpg" alt=""></button>
+      <div class="home-ind"></div>
+
+      <div class="pop" id="pop" role="menu"></div>
+
+      <div class="modal" id="modal" aria-hidden="true">
+        <div class="sheet">
+          <div class="sheet-doc"><img id="sheetImg" src="assets/doc-insurance.jpg" alt=""></div>
+          <div class="sheet-meta">
+            <h3 id="sheetName"></h3>
+            <p id="sheetSub"></p>
+            <button class="pill-btn" id="sheetDownload">Download</button>
+          </div>
+          <button class="circle sheet-close" id="sheetClose" aria-label="Close preview"><svg class="ico"><use href="#i-close"/></svg></button>
+        </div>
+      </div>
+
+      <div class="privacy" id="privacy" aria-hidden="true">
+        <div><div class="lock-big"><svg class="ico"><use href="#i-lock"/></svg></div><b>Screen locked</b><span>Click anywhere to unlock</span></div>
+      </div>
+
+      <div class="toast" id="toast" role="status"></div>
+    </div>
+  </div>
+</div>
+
+<div class="view-switch" id="viewSwitch" role="group" aria-label="Presentation">
+  <button data-view="app" aria-pressed="true">App</button>
+  <button data-view="shot" aria-pressed="false">Shot</button>
+  <button data-view="3d" aria-pressed="false">3D</button>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
